@@ -31,5 +31,6 @@
 ## mv还可以用来给文件改名，如 mv file.txt girls.txt ：将当前目录下面的file.txt 修改为girls.txt
 
 # file命令，获取文件类型 如：file hello 显示hello文件的类型
+# tar命令：打包和解包 如 tar -cvf aaa.tar * :将当前目录下面的所有文件和文件夹打包成为一个aaa.tar的文件
 
 
