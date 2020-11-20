@@ -17,4 +17,9 @@
 # rm *.png -rf 表示删除当前目录下面所有png文件
 # ln创建快捷方式
 如：ln -s my/all/dirs/dir1/dir2/hello.txt hello.txt 为当前目录下面的my/all/dirs/dir1/dir2下面的hello.txt文件创建一个hello.txt的快捷方式
+# cat命令的妙用：
+## 1.同时显示两个以上的文件cat epel.txt files.txt
+## 2.将两个以上的文件的内容合并到一个文件 cat file1.txt files.txt > file.txt
 
+# grep 的用法：查找
+## 如：grep w file.txt :在file.txt中查含有w的单词，不论w在单词的什么位置
