@@ -23,3 +23,11 @@
 
 # grep 的用法：查找
 ## 如：grep w file.txt :在file.txt中查含有w的单词，不论w在单词的什么位置
+# find在指定目录在查找文件如：find ./ -name "*.c" 在当前目录中查找以“.c”结束的文件，用了-name参数的话，后面需要加“”，否则找不到
+# cp 文件拷贝 ：cp 源文件名 目标文件名
+## 如：cp file1.txt file2.txt
+## 拷贝目录需要添加参数-r 如 cp abc/ abc1 -r 如：cp my/ my1/ -r ：将当前文件夹下面的my文件夹复制一个my1的副本
+# mv 文件移动： mv 源文件名 目标文件名，可以移动文件和目录  mv all/ ~/my/ 将当前目录下的allml移动到用户的家目录下面的my目录下面
+## mv还可以用来给文件改名，如 mv file.txt girls.txt ：将当前目录下面的file.txt 修改为girls.txt
+
+
