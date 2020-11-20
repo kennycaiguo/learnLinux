@@ -30,4 +30,6 @@
 # mv 文件移动： mv 源文件名 目标文件名，可以移动文件和目录  mv all/ ~/my/ 将当前目录下的allml移动到用户的家目录下面的my目录下面
 ## mv还可以用来给文件改名，如 mv file.txt girls.txt ：将当前目录下面的file.txt 修改为girls.txt
 
+# file命令，获取文件类型 如：file hello 显示hello文件的类型
+
 
