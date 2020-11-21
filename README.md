@@ -1,4 +1,6 @@
 # learnLinux
+# 可以利用ls命令查看一个目录下面右哪些文件以及大小，使用-lh组合参数
+## 也可以利用ls来查看文件夹的大小 如： ls -lh cProjects :查看当前目录下面cProjects文件夹的大小
 # linux 重定向符号“>”
 如：ls > files.txt :将ls命令的结果重定向到一个叫做files.txt的文件中，如果文件不存在，则创建，如果存在则覆盖原来的内容
 # linux 重定向符号“>>”
@@ -31,6 +33,8 @@
 ## mv还可以用来给文件改名，如 mv file.txt girls.txt ：将当前目录下面的file.txt 修改为girls.txt
 
 # file命令，获取文件类型 如：file hello 显示hello文件的类型
-# tar命令：打包和解包 如 tar -cvf aaa.tar * :将当前目录下面的所有文件和文件夹打包成为一个aaa.tar的文件
+# tar命令：打包和解包 ，该命令没有压缩功能
+## 打包 tar -cvf aaa.tar * :将当前目录下面的所有文件和文件夹打包成为一个aaa.tar的文件
+## 解包 tar -zxvf aaa.tar :将aaa.tar 文件解包到当前目录下面
 
 
