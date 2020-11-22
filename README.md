@@ -38,7 +38,7 @@
 ## 也可以用tar创建gzip压缩文件如：tar -cvzf java.tar.gz javaprojects ：把当前目录下面的javaprojects目录打包压缩为javaproj.tar.gz文件
 ##  解压 tar -zxvf aaa.tar :将aaa.tar 文件解包到当前目录下面
 ## 用tar命令创建bzip2压缩文件：tar -cjvf javap.tar.bz2 javaprojects ：把当前目录下面的javaprojects目录打包压缩为javaproj.tar.bz2文件
-##  解压tar.bz2文件 tar -jxvf ×××.tar.bz2
+##  解压tar.bz2文件 tar -jxvf ×××.tar.bz2 如果需要指定解压目录，需要-C参数
 # gzip命令，压缩文件和解压缩文件
 
 
