@@ -33,14 +33,16 @@
 ## mv还可以用来给文件改名，如 mv file.txt girls.txt ：将当前目录下面的file.txt 修改为girls.txt
 
 # file命令，获取文件类型 如：file hello 显示hello文件的类型
+# gzip命令，压缩文件和解压缩文件 如：gzip xx.tar :压缩当前目录下面的xx.tar文件生成xx.tar.gz 文件
+# gzip命令解压缩如：gzip -d jp.tar.gz 
 # tar命令：打包和解包 ，该命令没有压缩功能
 ## 打包 tar -cvf aaa.tar * :将当前目录下面的所有文件和文件夹打包成为一个aaa.tar的文件，如果需要压缩需要添加-z参数
 ## 也可以用tar创建gzip压缩文件如：tar -cvzf java.tar.gz javaprojects ：把当前目录下面的javaprojects目录打包压缩为javaproj.tar.gz文件
 ##  解压 tar -zxvf aaa.tar :将aaa.tar 文件解包到当前目录下面，也可以指定解压目录如：tar -zxvf jp.tar.gz -C ../ ：把当前目录的jp.tar.gz 解压缩到上一级目录
 ## 用tar命令创建bzip2压缩文件：tar -cjvf javap.tar.bz2 javaprojects ：把当前目录下面的javaprojects目录打包压缩为javaproj.tar.bz2文件
 ##  解压tar.bz2文件 tar -jxvf ×××.tar.bz2 如果需要指定解压目录，需要-C参数
-# gzip命令，压缩文件和解压缩文件 如：gzip xx.tar :压缩当前目录下面的xx.tar文件生成xx.tar.gz 文件
-# gzip命令解压缩如：gzip -d jp.tar.gz 
+
+# 查看目录大小 du 目录名称 -h
 
 
 
