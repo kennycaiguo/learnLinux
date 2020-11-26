@@ -56,7 +56,8 @@
 
 # groupadd ，添加用户组，groupadd admin 创建用户组admin
 # groupdel ， 删除用户组如：groupdel admin 删除用户组admin
-
+# useradd 用户名。添加新用户
+# userdel 用户名，删除用户
 # usermod 将用户添加到指定是组，格式：usermod -g 组名 用户名 如：usermod -g kenny abc，表示将用户abc添加到kenny组
 
 
