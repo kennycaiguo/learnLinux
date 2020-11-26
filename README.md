@@ -52,4 +52,7 @@
 # 用户权限管理命令：
 ## w/who/whoami：查看当前登录的用户，w命令最详细，who次之，whoami最简洁
 
+# groupadd ，添加用户组，groupadd admin 创建用户组admin
+# 删除用户组如，groupel：groupdel admin 删除用户组admin
+
 
