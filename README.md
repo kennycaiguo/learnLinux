@@ -60,5 +60,5 @@
 # 也可以在创建用户的同时为该用户指定所属的组 ：useradd -d /home/abc abc -g kenny -m，创建用户abc将其加入kenny用户组
 # userdel 用户名，删除用户，注意，有时候删除用户并不会删除用户主目录，如果要删除用户同时删除用户主目录，最好添加-r参数，如：userdel -r abc
 # usermod 将用户添加到指定是组，格式：usermod -g 组名 用户名 如：usermod -g kenny abc，表示将用户abc添加到kenny组
-
+# 为用户设置密码：passwd 用户名，然后按照提示操作如：passwd abc
 
