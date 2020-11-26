@@ -49,6 +49,7 @@
 ## 解压：unzip -d 目标文件夹 压缩文件名称：如：unzip -d cprojects cproj.zip 将当前目录下面的cproj.zip解压缩到cprojects 目录中，没有该目录会自动创建
  
 # which命令，查看指定的命令在哪里： 如：which ls ：查看ls命令在哪个目录，结果 /bin/ls
-
+# 用户权限管理命令：
+## w/who/whoami：查看当前登录的用户，w命令最详细，who次之，whoami最简洁
 
 
