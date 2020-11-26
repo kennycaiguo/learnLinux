@@ -61,4 +61,8 @@
 # userdel 用户名，删除用户，注意，有时候删除用户并不会删除用户主目录，如果要删除用户同时删除用户主目录，最好添加-r参数，如：userdel -r abc
 # usermod 将用户添加到指定是组，格式：usermod -g 组名 用户名 如：usermod -g kenny abc，表示将用户abc添加到kenny组
 # 为用户设置密码：passwd 用户名，然后按照提示操作如：passwd abc
-
+# last命令查询用户登录情况
+# 修改文件权限命令chmod
+## 用法1. chmod u-w 1.c ：将文件所有者的写权限撤销
+## 用法2. chmod g+x 1.c  ：给用户组添加对该文件的执行权限
+## 用法3. chmod o=rwx 1.c : 给其他用户设置对该文件的读写和执行权限
