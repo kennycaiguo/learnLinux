@@ -1,5 +1,5 @@
 # learnLinux
-# cat /etc/group :查看用户组信息
+# cat /etc/group :查看用户组信息，可以看到用户组名（一般和用户名相同），用户组号id
 # 可以利用ls命令查看一个目录下面右哪些文件以及大小，使用-lh组合参数
 ## 也可以利用ls来查看文件夹的大小 如： ls -lh cProjects :查看当前目录下面cProjects文件夹的大小
 # linux 重定向符号“>”
