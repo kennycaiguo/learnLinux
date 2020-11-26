@@ -48,6 +48,7 @@
 ## zip创建压缩文件：zip -r 目标文件名 源文件（目录）名：如：zip -r cproj cProjects 将当前目录下面的cProjects压缩为cproj.zip文件，注意必须添加-r参数否则不会添加文件到压缩包
 ## 解压：unzip -d 目标文件夹 压缩文件名称：如：unzip -d cprojects cproj.zip 将当前目录下面的cproj.zip解压缩到cprojects 目录中，没有该目录会自动创建
  
+# which命令，查看指定的命令在哪里： 如：which ls ：查看ls命令在哪个目录，结果 /bin/ls
 
 
 
