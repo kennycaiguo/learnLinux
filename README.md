@@ -1,5 +1,6 @@
 # learnLinux
 # cat /etc/group :查看用户组信息，可以看到用户组名（一般和用户名相同），用户组号id
+# cat /etc/passwd： 查看用户信息
 # 可以利用ls命令查看一个目录下面右哪些文件以及大小，使用-lh组合参数
 ## 也可以利用ls来查看文件夹的大小 如： ls -lh cProjects :查看当前目录下面cProjects文件夹的大小
 # linux 重定向符号“>”
@@ -56,4 +57,5 @@
 # groupadd ，添加用户组，groupadd admin 创建用户组admin
 # groupdel ， 删除用户组如：groupdel admin 删除用户组admin
 
+# usermod 将用户添加到指定是组
 
