@@ -58,7 +58,7 @@
 # groupdel ， 删除用户组如：groupdel admin 删除用户组admin，注意只有当一个用户名里面没有用户的时候才可以删除这个组，否则报错
 # useradd 用户名。添加新用户： 格式 useradd -d /home/abc abc -m，一定要添加-m参数，否则不会创建该用户的家目录，默认创建同名组
 # 也可以在创建用户的同时为该用户指定所属的组 ：useradd -d /home/abc abc -g kenny -m，创建用户abc将其加入kenny用户组
-# userdel 用户名，删除用户，注意，有时候删除用户并不会删除组，如果要删除用户同时删除组，最好添加-r参数，如：userdel -r abc
+# userdel 用户名，删除用户，注意，有时候删除用户并不会删除用户主目录，如果要删除用户同时删除用户主目录，最好添加-r参数，如：userdel -r abc
 # usermod 将用户添加到指定是组，格式：usermod -g 组名 用户名 如：usermod -g kenny abc，表示将用户abc添加到kenny组
 
 
