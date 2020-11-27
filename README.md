@@ -80,7 +80,7 @@
 ## chown命令，修改文件的所有者，格式：chown 用户名 文件或者目录名：如：chown kenny abc/ 将目录abc的所有者改为kenny
 ## chgrp命令，修改文件所属的组，格式：chgrp 文件组名 文件或目录名 如：chgrp kenny ./test 将当前目录下面的test文件的文件组改为kenny
 
-# 查看当前日历：cal
+# 查看当前日历：cal，也可以添加-y参数，表示查看一年的日历
 # 显示或设置时间 命令date
 ## 显示时间，直接date
 ## 修改时间：date -s 年月日（连着写）如：date -s 20201126 表示将日期设置为2020年11月26日
