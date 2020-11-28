@@ -100,3 +100,6 @@
 ## :args	列出当前编辑的文件名
 ## :next	打开多文件，使用 n(Next) p(revious)	N(ext) 切换
 ## :file	列出当前打开的所有文件
+
+# 复制粘贴取消缩进
+## :set paste
