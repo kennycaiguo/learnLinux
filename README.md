@@ -101,7 +101,8 @@
 # jobs命令查看后台进程
 # fg 进程号 可以将一个后台运行的程序调到前台运行
 ## 如：运行top命令，然后按ctrl+z，记住屏幕显示的id，fg id可以将其调到前台
-
+# 图形界面切换到字符界面ctrl+alt+f2 （这个centos可以，Ubuntu也可以）
+# 字符界面切换到图形界面Ctrl+alt+f7 （Ubuntu，centos不行），centos：Ctrl+Alt+F1
 
 
 
