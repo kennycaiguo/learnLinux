@@ -103,6 +103,7 @@
 ## 如：运行top命令，然后按ctrl+z，记住屏幕显示的id，fg id可以将其调到前台
 # 图形界面切换到字符界面ctrl+alt+f2 （这个centos可以，Ubuntu也可以）
 # 字符界面切换到图形界面Ctrl+alt+f7 （Ubuntu，centos不行），centos：Ctrl+Alt+F1
-
+# df命令，查看磁盘空间大小 df 目录名 -h 查看该目录所在的挂载区大小
+# du命令查看目录大小 du 目录名 -h
 
 
