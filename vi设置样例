@@ -1,0 +1,8 @@
+查看vim设置的样例文件
+linux 查看
+find /usr/share/ -name "*example.vim"
+mac 查看方法
+locate example.vim
+如果是第一次运行会报告错误，需要建立索引，根据提示操作即可，建议运行一次 updatedb
+
+ 
