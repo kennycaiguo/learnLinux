@@ -149,4 +149,40 @@ autoindent
 :set autoindent
 在这种缩进形式中，新增加的行和前一行使用相同的缩进形式
 
- 
+# 显示隐藏符号
+默认不显示 :set nolist
+显示 :set invlist
+" normal is :set nolist | show hide is :set invlist
+:set nolist
+
+ # 使用vim寄存器
+使用vim寄存器 “+p 粘贴
+
+根本不用考虑是否自动缩进，是否paste模式，直接原文传递
+
+如果想保存原寄存器中内容而同时增加新的内容
+就要在yy前增加标签
+标签以双引号开始，跟着的是标签名称，可以是数字0-9，也可以是26个字母
+
+显示所有寄存器内容
+
+:reg
+注意两个特殊的寄存器：* 和 +
+
+这两个寄存器是和系统相通的，前者关联系统选择缓冲区，后者关联系统剪切板
+通过它们可以和其他程序进行数据交换
+
+若寄存器列表里无 * 或 + 寄存器，则可能是由于没有安装vim的图形界面所致
+sudo apt-get install vim-gnome
+
+ # 设置vim永远显示行号
+修改vim的配置文件加入 set nu
+
+vi ~/.vimrc
+然后输入
+
+set nu
+当然也可以输入其他配置类似
+
+set nonu
+syntax on
