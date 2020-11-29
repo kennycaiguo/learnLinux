@@ -1,0 +1,75 @@
+在vim启动过程中，首先将查找配置文件并执行其中的命令。而这些初始化文件一般有vimrc、gvimrc和exrc三种。
+
+注意：如果执行gvim，那么$VIMRUNTIME/menu.vim也会被执行。
+
+配置文件位置
+
+vimrc是主配置文件，它有全局和用户两种版本。
+
+全局vimrc文件，存放在Vim的安装目录中。可以使用以下命令，确定Vim的安装目录：
+
+:echo $VIM
+
+默认情况下，系统vimrc存放在以下位置：
+
+Linux: /usr/share/vim/vimrc
+
+Windows: c:\program files\vimrc
+
+用户vimrc文件，存放在用户主目录中。可以使用以下命令，确定用户主目录：
+
+:echo $HOME
+
+默认情况下，用户vimrc存放在以下位置：
+
+Linux: /home/username/.vimrc
+
+Windows: c:\documents and settings\username\_vimrc
+
+注意：用户配置文件优先于系统配置文件。
+
+gvimrc是GVIM的配置文件，它也有全局和用户两种版本，并且存放在与vimrc相同的目录中。
+
+默认情况下，系统gvimrc存放在以下位置：
+
+Linux: /usr/share/vim/gvimrc
+
+Windows: c:\program files\vim\_gvimrc
+
+默认情况下，用户gvimrc存放在以下位置：
+
+Linux: /home/username/.gvimrc
+
+Windows: c:\documents and settings\username\_gvimrc
+
+exrc文件，仅用于向后兼容olvi/ex，它的全局和用户两种版本也放置于vimrc相同的目录里。除非你使用vi-compatible模式，否则不需要关注exrc配置文件。
+
+注意：在Unix和Linux下，vim的配置文件被命名为以点开头的隐藏文件；而在Windows下，配置文件则以下划线开头命名。
+
+编辑配置文件
+
+可以使用以下命令，新建缓冲区来编辑配置文件：
+
+:edit $MYVIMRC
+
+也可以使用以下命令，新建标签页来编辑配置文件：
+
+:tabedit $MYVIMRC
+
+例如，我们可以在配置文件中使用以下命令，来设置vim的选项：
+
+:syntax on "打开语法加亮功能
+
+:set shiftwidth=4 "设置缩进宽度为4个空格
+
+其中，单引号（"）为注释内容。
+
+应用配置文件
+
+修改配置文件后，需要重新启动Vim，或使用:source命令来应用新的设置：
+
+:source $MYVIMRC
+
+我们可以在配置文件中增加以下命令，在保存后自动应用配置：
+
+autocmd bufwritepost .vimrc source $MYVIMRC
