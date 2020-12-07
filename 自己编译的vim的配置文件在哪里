@@ -14,3 +14,32 @@ vimrc
 :echo $VIM
 
 结果应该是这样的: centos： /usr/local/vim/share/vim
+不管怎么改用户版的vimrc文件, 其中的设置内容都是覆盖在全局vimrc文件中设置的内容. 这就意味着你可以不需要去改变全局vimrc文件来进行配置Vim. 
+
+你可以在Vim的普通模式下输入下面的命令, 来找出Vim认为的你的系统的主目录的位置: 
+
+:echo $HOME
+
+vimrc文件包含的是ex (vi的前身) 命令, 一条命令一行. 并且vimrc文件也是增加Vim配置信息的默认方式. 
+
+你的vimrc可以将其他的文件 (包含着配置信息) 作为外部资源. 在vimrc文件里, 你可用以source命令来实现: 
+
+source /path/to/external/file
+
+这样可以使你的vimrc文件保持整洁, 并且你的设置会更加的结构 (更多的关于如何保持vimrc文件整洁的内容请参考附录B) . 
+
+gvimrc 
+
+gvimrc文件是专为Gvim的配置文件. 它和上面提到的vimrc文件很相似, 并且是放在同一个目录下的 (也是分为用户版和全局版), 如: 
+
+gvimrc文件是专为Gvim的配置文件. 它和上面提到的vimrc文件很相似, 并且是放在同一个目录下的 (也是分为用户版和全局版), 如: 
+Linux: /home/kim/.gvimrc 
+/usr/share/vim/gvimrc
+
+Windows: c:\documents and settings\kim\_gvimrc
+c:\program files\vim\
+这个文件是用来设置只有Gvim才能使用的GUI设置. 
+
+exrc 
+
+这是文件是用作与vi或ex向后兼容用的. 它也是和vimrc文件放在同一个目录, 当然也是分为用户版和全局版). 然而, 除非你想用vi兼容的模式来使用用Vim, 否则你根本就不会用到这个文件.
