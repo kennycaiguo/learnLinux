@@ -1,0 +1,29 @@
+Linux环境下.vimrc的配置
+
+第一步：进入根目录：cd /
+
+第二步：打开.vimrc（若没有.vimrc文件则会自动创建）：vim .vimrc
+
+第三步：在.vimrc文件中输入以下语句：
+
+
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936	"在vim显示中文	
+set termencoding=utf-8	"在vim显示中文
+set encoding=utf-8	"在vim显示中文
+set nu	"设置显示行号
+set backspace=2	"可随时用退格键删除
+set background=dark	"设置背景颜色
+set autoindent	"设置自动缩排
+set cindent	"按C语言格式缩进
+set tabstop=4	"设置Tab长度为4格
+set shiftwidth=4	"设置自动缩进长度为4格
+set showmatch	"显示括号匹配
+set matchtime=1	"括号匹配显示时间为1(单位是十分之一秒)
+
+"修改默认注释颜色
+hi Comment ctermfg=DarkCyan	
+"进行语法检验，颜色显示
+syntax on
+
+set mouse=a	"启动鼠标
+
